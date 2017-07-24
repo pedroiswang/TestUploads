@@ -466,6 +466,7 @@
 				EB63A2BA1F259ACA00257844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
