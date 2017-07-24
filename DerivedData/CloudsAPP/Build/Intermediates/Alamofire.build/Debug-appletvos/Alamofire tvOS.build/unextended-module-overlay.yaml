@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/pedro/Desktop/CloudData-chen/0724/CloudsAPP/DerivedData/CloudsAPP/Build/Products/Debug-appletvos/Alamofire.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/pedro/Desktop/CloudData-chen/0724/CloudsAPP/DerivedData/CloudsAPP/Build/Intermediates/Alamofire.build/Debug-appletvos/Alamofire tvOS.build/unextended-module.modulemap',
+    }]
+  }]
+}
