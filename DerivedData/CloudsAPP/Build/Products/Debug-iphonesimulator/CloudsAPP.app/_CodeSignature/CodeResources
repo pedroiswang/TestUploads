@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		siumQcqUEtBATzMBTEtU2lRuPjE=
+		nQ5/r5HUT0yagJ136uRm3oCkkFA=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		dmfqmEmJo081L/utTtlNr7FMoC8=
+		LjRDdWLykEPKJbF6p6uUzH9co+Q=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		+09Is7Fx/gp7JkEOZMwu9uMXauM=
+		1iJwcp5B1n47btxqG7MYGWqzZ78=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		1gTo40rnsTXqoZsOvswRG9SAuKI=
+		9g7267zi1oKsewTPacVWnYYm8TM=
 		</data>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		PUnlYXCpUV34iEyaXLXcsrQh3F8=
+		9zqjE+N5P540FcOABz3GtVF4Ao4=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			siumQcqUEtBATzMBTEtU2lRuPjE=
+			nQ5/r5HUT0yagJ136uRm3oCkkFA=
 			</data>
 			<key>hash2</key>
 			<data>
-			H27JlLlqO1Tzdlxc9vZPg/rpSl8MItvufKXKNasHJfc=
+			E1jl6qgRXyfEeszmNAb6Gr/WqxotgJmVIEREKFjsP1o=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -121,22 +121,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dmfqmEmJo081L/utTtlNr7FMoC8=
+			LjRDdWLykEPKJbF6p6uUzH9co+Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			JR3HHylV6FVaFlphYUTnV2NoKhue7VY1jhlSCzmb+Es=
+			DeOSP8R8MBbCfuhfnPGyAaz/eD0GqVbYUNLVo1F4Hco=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+09Is7Fx/gp7JkEOZMwu9uMXauM=
+			1iJwcp5B1n47btxqG7MYGWqzZ78=
 			</data>
 			<key>hash2</key>
 			<data>
-			we/PKn/jyDI+vJ1TdCJ2XEj66WM23/4tJyEuKVEZcEA=
+			NeG+cUVYlriou0YT0ODRdnKaH7qXw8fSA8jPBgCYiTk=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -154,22 +154,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1gTo40rnsTXqoZsOvswRG9SAuKI=
+			9g7267zi1oKsewTPacVWnYYm8TM=
 			</data>
 			<key>hash2</key>
 			<data>
-			VjtYktCl9kpanaLeMIdqwKLD8Zs/s1lh9pYgk/XpeFc=
+			pd9AApit7CbMrAY5MQ7RQTph32ZmfZrc/Liu7f+7LM8=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PUnlYXCpUV34iEyaXLXcsrQh3F8=
+			9zqjE+N5P540FcOABz3GtVF4Ao4=
 			</data>
 			<key>hash2</key>
 			<data>
-			oH7pDxwvvXJKZ/0Og16TsRi+WKDW5iAOARozQ/c/lMA=
+			jmtWvp5VcxgwciaSa0Pm1Z5vrDvf5MtkZ65VTkKMMbw=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>

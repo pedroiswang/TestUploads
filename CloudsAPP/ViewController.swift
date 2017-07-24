@@ -39,10 +39,13 @@ class ViewController: UIViewController
                     
                     if let secondJSON = dictionary["headers"] as? [String:Any]
                     {
-                        if let value2 = secondJSON["User-Agent"] as? String
+                        for (key, value) in secondJSON
                         {
-                            print("解出key為Headers中的User-Agent值")
-                            print(value2)
+                            if let value_string = value as? String
+                            {
+                                print("解出key為Headers中的\(key)值")
+                                print(value_string)
+                            }
                         }
                     }
                 }
