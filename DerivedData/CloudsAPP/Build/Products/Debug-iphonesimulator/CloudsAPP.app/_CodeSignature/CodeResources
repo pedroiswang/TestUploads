@@ -28,6 +28,18 @@
 		<data>
 		1gTo40rnsTXqoZsOvswRG9SAuKI=
 		</data>
+		<key>Frameworks/Alamofire.framework/Alamofire</key>
+		<data>
+		Q+FX4l5rXPNFW0X1R6KSbW16Q5w=
+		</data>
+		<key>Frameworks/Alamofire.framework/Info.plist</key>
+		<data>
+		Ycwz/n6rfEt+8AFHngMmmL5hGBs=
+		</data>
+		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
+		<data>
+		aZzVBRqYxhbXqjpk+QOENoBTn08=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		+msuybEsPPMR2cLaC0bH4tCpSWA=
@@ -59,6 +71,10 @@
 		<key>Frameworks/libswiftQuartzCore.dylib</key>
 		<data>
 		TwXz6pt2XOZ1uyCc1Z7GUIjZoTw=
+		</data>
+		<key>Frameworks/libswiftSwiftOnoneSupport.dylib</key>
+		<data>
+		FwVYs8LmJB0KEEa0+KEam0u8u/Q=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
@@ -143,6 +159,39 @@
 			<key>hash2</key>
 			<data>
 			VjtYktCl9kpanaLeMIdqwKLD8Zs/s1lh9pYgk/XpeFc=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/Alamofire</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q+FX4l5rXPNFW0X1R6KSbW16Q5w=
+			</data>
+			<key>hash2</key>
+			<data>
+			x0d6ZU0086uM0u/dQMsqgSQ1w8snUh7iBxf4fVJ1oB0=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ycwz/n6rfEt+8AFHngMmmL5hGBs=
+			</data>
+			<key>hash2</key>
+			<data>
+			z3KU8tiDE0MWYfvj8Z1dPOKY2EeuTFL96DwxFYeM+hs=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aZzVBRqYxhbXqjpk+QOENoBTn08=
+			</data>
+			<key>hash2</key>
+			<data>
+			Noa7VEwM5RY3zeCciEeiyW3Btq4Pq1TGo6zshHkc0bo=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -231,6 +280,17 @@
 			<key>hash2</key>
 			<data>
 			fenV0oyafo6WELkDIcXi9bWQ3B5oVOojBSvsCXCVk4Q=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftSwiftOnoneSupport.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FwVYs8LmJB0KEEa0+KEam0u8u/Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZfFgvQ5HFcCpYwA35z9SOUUvpRGW7/jLJiilpTfslRM=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftUIKit.dylib</key>
