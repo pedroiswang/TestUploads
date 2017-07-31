@@ -20,44 +20,56 @@ class ViewController: UIViewController
         Alamofire.request("https://api.github.com/users/octocat/repos").responseJSON{response in
             
             
-            guard let result_value = response.result.value
-            else {return}
-            
-//            if let result_value = response.result.value
-         
-            if let array2 = result_value as? [Any]
+            guard let result_value = response.result.value,
+            let array2 = result_value as? [Any]
+            else
             {
-                
-                
+                return
+            }
+        
                 for object in array2
                 {
-                    if let dictionary = object as? [String:Any]
+                    guard let dictionary = object as? [String:Any]
+                    else
                     {
-                        if let value2 = dictionary["id"] as? Int
-                        {
-                            print("id:\(value2)")
-                        }
-                        if let value3 = dictionary["name"] as? String
-                        {
-                            print("name:\(value3)")
-                        }
-                        if let value4 = dictionary["private"] as? Bool
-                        {
-                            print("private:\(value4)")
-                        }
-                        if let value5 = dictionary["homepage"] as? String
-                        {
-                            print("homepage:\(value5)")
-                        }
-                        else
-                        {
-                            print("homepage: null")
-                        }
-                        
+                        return
                     }
+                 
+                    for (key, value) in dictionary
+                    {
+                        switch value
+                        {
+                        case is Int:
+                            print("\(key): \(value) (Int)")
+                        case is String:
+                            print("\(key): \(value) (String)")
+                        case is Bool:
+                            print("\(key): \(value) (Bool)")
+                        default:
+                           break// print("\(key): (unknown type)")
+                        }
+                    }
+//                        if let value2 = dictionary["id"] as? Int
+//                        {
+//                            print("id:\(value2)")
+//                        }
+//                        if let value3 = dictionary["name"] as? String
+//                        {
+//                            print("name:\(value3)")
+//                        }
+//                        if let value4 = dictionary["private"] as? Bool
+//                        {
+//                            print("private:\(value4)")
+//                        }
+//                        if let value5 = dictionary["homepage"] as? String
+//                        {
+//                            print("homepage:\(value5)")
+//                        }
+//                        else
+//                        {
+//                            print("homepage: null")
+//                        }
                 }
-            }
-            
         }
         
         Alamofire.request("https://httpbin.org/get").responseJSON{response in
