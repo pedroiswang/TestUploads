@@ -15,6 +15,51 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        
+        Alamofire.request("https://api.github.com/users/octocat/repos").responseJSON{response in
+            
+            
+            guard let result_value = response.result.value
+            else {return}
+            
+//            if let result_value = response.result.value
+         
+            if let array2 = result_value as? [Any]
+            {
+                
+                
+                for object in array2
+                {
+                    if let dictionary = object as? [String:Any]
+                    {
+                        if let value2 = dictionary["id"] as? Int
+                        {
+                            print("id:\(value2)")
+                        }
+                        if let value3 = dictionary["name"] as? String
+                        {
+                            print("name:\(value3)")
+                        }
+                        if let value4 = dictionary["private"] as? Bool
+                        {
+                            print("private:\(value4)")
+                        }
+                        if let value5 = dictionary["homepage"] as? String
+                        {
+                            print("homepage:\(value5)")
+                        }
+                        else
+                        {
+                            print("homepage: null")
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+        
         Alamofire.request("https://httpbin.org/get").responseJSON{response in
 //            print(response.request!)
 //            print(response.response!)

@@ -10,7 +10,9 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - !private "Alamofire"
+- !private "Bool"
 - !private "CastingPrecedence"
+- !private "Int"
 - !private "String"
 - !private "StringLiteralType"
 - "UIViewController"
@@ -93,6 +95,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "Alamofire"]
+- !private ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
@@ -132,6 +136,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo11UIResponder", "Alamofire"]
+- !private ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
@@ -156,6 +162,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo16UIViewController", "Alamofire"]
+- !private ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
@@ -164,6 +172,8 @@ depends-member:
 - ["CSo16UIViewController", ""]
 - !private ["P9Alamofire14URLConvertible", "init"]
 - !private ["C9CloudsAPP14ViewController", "Alamofire"]
+- !private ["C9CloudsAPP14ViewController", "Bool"]
+- !private ["C9CloudsAPP14ViewController", "Int"]
 - !private ["C9CloudsAPP14ViewController", "String"]
 - ["C9CloudsAPP14ViewController", "deinit"]
 - ["C9CloudsAPP14ViewController", "didReceiveMemoryWarning"]
