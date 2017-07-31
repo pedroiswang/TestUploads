@@ -16,10 +16,10 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         
-        
+        /*
         Alamofire.request("https://api.github.com/users/octocat/repos").responseJSON{response in
             
-            
+           
             guard let result_value = response.result.value,
             let array2 = result_value as? [Any]
             else
@@ -71,43 +71,73 @@ class ViewController: UIViewController
 //                        }
                 }
         }
-        
+       */
         Alamofire.request("https://httpbin.org/get").responseJSON{response in
 //            print(response.request!)
 //            print(response.response!)
 //            print(response.data!)
 //            print(response.result)
             
-            if let array = response.result.value{
-            print("準備印出資料")
-                print(array)
-            }
+//            if let array = response.result.value{
+//            print("準備印出資料")
+//                print(array)
+//            }
 
-            if let JSON = response.result.value
-            {
-                if let dictionary = JSON as? [String:Any]
-                {
-                    
-                    if let value1 = dictionary["origin"] as? String
-                    {
-                        print("解出key為origin的值")
-                        print(value1)
-                    }
-                    
-                    if let secondJSON = dictionary["headers"] as? [String:Any]
-                    {
-                        for (key, value) in secondJSON
-                        {
-                            if let value_string = value as? String
-                            {
-                                print("解出key為Headers中的\(key)值")
-                                print(value_string)
-                            }
-                        }
-                    }
-                }
-                
+           guard let JSON_OBJECT = response.result.value,
+            let dictionary = JSON_OBJECT as? [String:Any]
+            else
+           {
+            return
             }
+            
+            guard let origin = dictionary["origin"] as? String
+            else
+            {
+                return
+            }
+            
+            print("origin: \(origin)")
+            
+            guard let url = dictionary["url"] as? String
+            else
+            {
+                return
+            }
+            
+            print("url: \(url)")
+            
+            let httpbinOrgJson = HttpbinOrgJson(origin: origin, url:url)    
+            print(httpbinOrgJson)
+            
+            // 這一行會讀取extension的初始化內容
+            let httpbinOrgJson2 = HttpbinOrgJson()
+            print(httpbinOrgJson2)
+            
+//            if let JSON = response.result.value
+//            {
+//                if let dictionary = JSON as? [String:Any]
+//                {
+//                    
+//                    if let value1 = dictionary["origin"] as? String
+//                    {
+//                        print("解出key為origin的值")
+//                        print(value1)
+//                    }
+//                    
+//                    if let secondJSON = dictionary["headers"] as? [String:Any]
+//                    {
+//                        for (key, value) in secondJSON
+//                        {
+//                            if let value_string = value as? String
+//                            {
+//                                print("解出key為Headers中的\(key)值")
+//                                print(value_string)
+//                            }
+//                        }
+//                    }
+//                }
+//                
+//            }
         }
     }
 
