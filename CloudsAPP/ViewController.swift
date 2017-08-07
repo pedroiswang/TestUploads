@@ -8,18 +8,19 @@
 
 import UIKit
 import Alamofire
+import Gloss
 
 class ViewController: UIViewController
 {
 
-    var apiGithubConJsons:[ApiGithubComJson] = []
+    var apiGithubConJsons:[ApiGithubComJsonGloss] = []
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        ApiGithubComJson.fetch(){dataTransfer in
+        ApiGithubComJsonGloss.fetch(){dataTransfer in
         self.apiGithubConJsons = dataTransfer
             print("fetch()完成後")
             print(self.apiGithubConJsons)
