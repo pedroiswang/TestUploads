@@ -12,9 +12,20 @@ import Alamofire
 class ViewController: UIViewController
 {
 
+    var apiGithubConJsons:[ApiGithubComJson] = []
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        ApiGithubComJson.fetch(){dataTransfer in
+        self.apiGithubConJsons = dataTransfer
+            print("fetch()完成後")
+            print(self.apiGithubConJsons)
+        
+        
+        }
         
         /*
         Alamofire.request("https://api.github.com/users/octocat/repos").responseJSON{response in
@@ -72,47 +83,37 @@ class ViewController: UIViewController
                 }
         }
        */
-        Alamofire.request("https://httpbin.org/get").responseJSON{response in
-//            print(response.request!)
-//            print(response.response!)
-//            print(response.data!)
-//            print(response.result)
-            
-//            if let array = response.result.value{
-//            print("準備印出資料")
-//                print(array)
+//        Alamofire.request("https://httpbin.org/get").responseJSON{response in
+////            print(response.request!)
+////            print(response.response!)
+////            print(response.data!)
+////            print(response.result)
+//            
+////            if let array = response.result.value{
+////            print("準備印出資料")
+////                print(array)
+////            }
+//
+//           guard let JSON_OBJECT = response.result.value,
+//            let dictionary = JSON_OBJECT as? [String:Any]
+//            else
+//           {
+//            return
 //            }
-
-           guard let JSON_OBJECT = response.result.value,
-            let dictionary = JSON_OBJECT as? [String:Any]
-            else
-           {
-            return
-            }
-            
-            guard let origin = dictionary["origin"] as? String
-            else
-            {
-                return
-            }
-            
-            print("origin: \(origin)")
-            
-            guard let url = dictionary["url"] as? String
-            else
-            {
-                return
-            }
-            
-            print("url: \(url)")
-            
-            let httpbinOrgJson = HttpbinOrgJson(origin: origin, url:url)    
-            print(httpbinOrgJson)
-            
+//            
+//            
+//           
+//            
+////            let httpbinOrgJson = HttpbinOrgJson(origin: origin, url:url)    
+////            print(httpbinOrgJson)
+//
+//            let httpbinOrgJson3 = try? HttpbinOrgJson(dictionary: dictionary)
+//            print(httpbinOrgJson3 as Any)
+        
             // 這一行會讀取extension的初始化內容
-            let httpbinOrgJson2 = HttpbinOrgJson()
-            print(httpbinOrgJson2)
-            
+//            let httpbinOrgJson2 = HttpbinOrgJson()
+//            print(httpbinOrgJson2)
+//            
 //            if let JSON = response.result.value
 //            {
 //                if let dictionary = JSON as? [String:Any]
@@ -138,7 +139,7 @@ class ViewController: UIViewController
 //                }
 //                
 //            }
-        }
+//        }
     }
 
     override func didReceiveMemoryWarning()

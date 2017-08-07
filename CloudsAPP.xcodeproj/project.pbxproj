@@ -15,6 +15,7 @@
 		EB63A2D41F25BB8400257844 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB63A2C71F25A5D800257844 /* Alamofire.framework */; };
 		EB63A2D51F25BB8400257844 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB63A2C71F25A5D800257844 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB6D6B1E1F2ED7DB005FA4A4 /* httpbin.org.json.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6B1D1F2ED7DB005FA4A4 /* httpbin.org.json.swift */; };
+		EB6D6B4C1F2F0733005FA4A4 /* api.github.com.json.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6B4B1F2F0733005FA4A4 /* api.github.com.json.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		EB63A2B51F259ACA00257844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB63A2BB1F25A5D800257844 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		EB6D6B1D1F2ED7DB005FA4A4 /* httpbin.org.json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = httpbin.org.json.swift; path = ../httpbin.org.json.swift; sourceTree = "<group>"; };
+		EB6D6B4B1F2F0733005FA4A4 /* api.github.com.json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = api.github.com.json.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				EB63A2A91F259ACA00257844 /* AppDelegate.swift */,
 				EB63A2AB1F259ACA00257844 /* ViewController.swift */,
 				EB6D6B1D1F2ED7DB005FA4A4 /* httpbin.org.json.swift */,
+				EB6D6B4B1F2F0733005FA4A4 /* api.github.com.json.swift */,
 				EB63A2AD1F259ACA00257844 /* Main.storyboard */,
 				EB63A2B01F259ACA00257844 /* Assets.xcassets */,
 				EB63A2B21F259ACA00257844 /* LaunchScreen.storyboard */,
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6D6B4C1F2F0733005FA4A4 /* api.github.com.json.swift in Sources */,
 				EB63A2AC1F259ACA00257844 /* ViewController.swift in Sources */,
 				EB63A2AA1F259ACA00257844 /* AppDelegate.swift in Sources */,
 				EB6D6B1E1F2ED7DB005FA4A4 /* httpbin.org.json.swift in Sources */,
